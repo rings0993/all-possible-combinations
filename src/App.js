@@ -11,20 +11,20 @@ import Combinations from "./components/Combinations";
 function App() {
   return (
     <div className={style.main}>
-      <h1 className={style.main__title}> 編輯樣式類表</h1>
+      <h1 className={style.main__title}> Possible Combinations</h1>
       <div className={style.container}>
         <div className={style.container__box1}>
           <ListGenerator></ListGenerator>
         </div>
         <div className={style.container__box2}>
-          <h3 className={style.container__box2Title}>組合預覽</h3>
+          <h3 className={style.container__box2Title}>Combinations Output</h3>
           <Combinations></Combinations>
         </div>
       </div>
-      <div className={style.confirmBox}>
+      {/* <div className={style.confirmBox}>
         <Button btnStyle="hollow">取消</Button>
         <Button btnStyle="solid">儲存</Button>
-      </div>
+      </div> */}
 
       {/* <div className="App">
         <header className="App-header">

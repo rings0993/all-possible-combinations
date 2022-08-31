@@ -50,14 +50,14 @@ function ListItem(props) {
           }
           // onClick={onClickHandler}
         >
-          刪除
+          Detele
         </button>
       </div>
     );
   }
   return (
     <div className={style.main} id={props.id}>
-      <div className={style.title}>選擇標題</div>
+      <div className={style.title}>Category Name</div>
       <div className={style.input}>
         <input
           type="text"
@@ -77,11 +77,13 @@ function ListItem(props) {
           onClick={() => dispatch(deleteItem(props.id))}
           // onClick={onClickHandler}
         >
-          刪除
+          Delete
         </button>
       </div>
       <div className={style.sub}>
-        <div className={style.title}>{titleInput?.current?.value} 樣式內容</div>
+        <div className={style.title}>
+          {titleInput?.current?.value} Category Options
+        </div>
         {contentRows}
         <button
           className={style.addSubBtn}

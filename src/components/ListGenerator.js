@@ -37,7 +37,7 @@ function ListGenerator() {
         className={style.button}
         onClick={() => dispatch(addItem(uniqid()))}
       >
-        新增選項
+        Add Category
       </button>
       <ul>{rows}</ul>
     </div>
