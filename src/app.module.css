@@ -1,0 +1,30 @@
+.main {
+  /* background-color: aliceblue; */
+  margin-left: 2rem;
+}
+.container {
+  /* background-color: rgb(173, 212, 246); */
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container__box1 {
+  /* background-color: blanchedalmond; */
+  font-size: 2rem;
+}
+
+.container__box2 {
+  background-color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.confirmBox {
+  position: absolute;
+  display: grid;
+  min-width: 95%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  bottom: 4vh;
+  gap: 2rem;
+}

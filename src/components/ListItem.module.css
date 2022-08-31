@@ -1,0 +1,74 @@
+.main {
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+
+.sub {
+  display: grid;
+  margin-left: 2rem;
+  padding: 0;
+  gap: 0.1rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+.input {
+  display: flex;
+  font-size: 1rem;
+  margin: 3px;
+  min-width: 100%;
+}
+
+.input__box {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 0.8px solid rgb(230, 230, 230);
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.addSubBtn {
+  flex-grow: 1;
+  font-weight: bold;
+  color: rgb(52, 61, 87);
+  background-color: rgb(229, 232, 239);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+.addSubBtn:hover {
+  color: rgb(52, 61, 87);
+  background-color: rgb(218, 221, 228);
+}
+
+.input__box:focus {
+  background-color: rgb(252, 252, 252);
+  outline: 1px solid rgb(230, 230, 230);
+}
+
+.input__deleteBtn {
+  border: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  min-width: 4rem;
+  color: rgb(103, 115, 139);
+  background: rgb(236, 239, 246);
+  font-weight: bold;
+  border: 0.8px solid rgb(230, 230, 230);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input__deleteBtn:hover {
+  color: rgb(52, 61, 87);
+  background: rgb(229, 234, 249);
+}

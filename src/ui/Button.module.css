@@ -1,0 +1,29 @@
+.button {
+  display: block;
+  min-width: 100%;
+  padding: 0.8rem;
+
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+}
+
+.solid {
+  background-color: rgb(52, 61, 87);
+  color: #fff;
+  border: none;
+}
+
+.hollow {
+  background-color: rgb(255, 255, 255);
+  border: solid 0.2px rgb(191, 191, 191);
+  color: rgb(41, 41, 41);
+}
+
+.button.solid:hover {
+  background-color: rgb(93, 108, 154);
+}
+
+.button.hollow:hover {
+  background-color: rgb(210, 210, 210);
+}
