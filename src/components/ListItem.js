@@ -6,7 +6,6 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   deleteItem,
   setTitle,
-  selectList,
   setContent,
   addContent,
   deleteContent,
@@ -15,11 +14,9 @@ import {
 function ListItem(props) {
   const dispatch = useDispatch();
   const contentRows = [];
-  const list = useSelector(selectList);
   const curentContentLengh = props.content.length;
   const titleInput = useRef(null);
   const contentInput = useRef([]);
-  // console.log("🅱", props);
 
   for (let i = 0; i < curentContentLengh; i++) {
     contentRows.push(
@@ -57,7 +54,7 @@ function ListItem(props) {
   }
   return (
     <div className={style.main} id={props.id}>
-      <div className={style.title}>Category Name</div>
+      <div className={style.title}>Set Name</div>
       <div className={style.input}>
         <input
           type="text"
@@ -82,7 +79,7 @@ function ListItem(props) {
       </div>
       <div className={style.sub}>
         <div className={style.title}>
-          {titleInput?.current?.value} Category Options
+          {titleInput?.current?.value} Set Elements
         </div>
         {contentRows}
         <button

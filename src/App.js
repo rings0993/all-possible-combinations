@@ -1,11 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
 
 import style from "./app.module.css";
 import ListGenerator from "./components/ListGenerator";
-import Button from "./ui/Button";
 import Combinations from "./components/Combinations";
 
 function App() {
@@ -21,16 +18,6 @@ function App() {
           <Combinations></Combinations>
         </div>
       </div>
-      {/* <div className={style.confirmBox}>
-        <Button btnStyle="hollow">取消</Button>
-        <Button btnStyle="solid">儲存</Button>
-      </div> */}
-
-      {/* <div className="App">
-        <header className="App-header">
-          <Counter />
-        </header>
-      </div> */}
     </div>
   );
 }

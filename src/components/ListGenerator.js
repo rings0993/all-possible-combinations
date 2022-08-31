@@ -4,13 +4,7 @@ import style from "./ListGenerator.module.css";
 import uniqid from "uniqid";
 
 import { useSelector, useDispatch } from "react-redux";
-import { increment, selectCount } from "../features/counter/counterSlice";
-import {
-  addItem,
-  deleteItem,
-  selectListLength,
-  selectList,
-} from "../features/listObj/listObjSlice";
+import { addItem, selectList } from "../features/listObj/listObjSlice";
 import ListItem from "./ListItem";
 
 function ListGenerator() {
@@ -18,7 +12,6 @@ function ListGenerator() {
   const currentLengh = list["value"].length;
   const dispatch = useDispatch();
   const rows = [];
-  // console.log("🅰", list);
   for (let i = 0; i < currentLengh; i++) {
     rows.push(
       <ListItem
@@ -37,7 +30,7 @@ function ListGenerator() {
         className={style.button}
         onClick={() => dispatch(addItem(uniqid()))}
       >
-        Add Category
+        Add Set
       </button>
       <ul>{rows}</ul>
     </div>
