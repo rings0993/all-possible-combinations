@@ -11,13 +11,13 @@ import Combinations from "./components/Combinations";
 function App() {
   return (
     <div className={style.main}>
-      <h1> 編輯樣式列表</h1>
+      <h1 className={style.main__title}> 編輯樣式類表</h1>
       <div className={style.container}>
         <div className={style.container__box1}>
           <ListGenerator></ListGenerator>
         </div>
         <div className={style.container__box2}>
-          組合預覽
+          <h3 className={style.container__box2Title}>組合預覽</h3>
           <Combinations></Combinations>
         </div>
       </div>

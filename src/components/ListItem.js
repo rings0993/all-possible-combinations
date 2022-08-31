@@ -27,7 +27,7 @@ function ListItem(props) {
         <input
           type="text"
           id={props.content[i].id}
-          // value={props.children}
+          value={props.content[i].value || ""}
           className={style.input__box}
           ref={el => (contentInput.current[i] = el)}
           onChange={() =>
